@@ -1,0 +1,14 @@
+#app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30%;
+  padding: 20px;
+  margin: 30px;
+}
+
+img {
+  height: 400px;
+}
