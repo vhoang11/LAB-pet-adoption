@@ -12,3 +12,24 @@
 img {
   height: 400px;
 }
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+;}
+
+.btn {
+  background-color: gray;
+  margin: 30px;
+  color: white;
+  width: 100px;
+}
+
+.card-text {
+  height: 50px;
+}
+
+.pet-type {
+  background-color: lavender;
+}
