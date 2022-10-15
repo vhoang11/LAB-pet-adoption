@@ -52,3 +52,18 @@ img {
   background-color: lightskyblue;
   color: white;
 }
+
+.btn-dogs {
+  background-color: green;
+  color: white;
+}
+
+.btn-cats {
+  background-color: lavender;
+  color: goldenrod;
+}
+
+.btn-dinos {
+  background-color: lightskyblue;
+  color: white;
+}
