@@ -31,5 +31,24 @@ img {
 }
 
 .pet-type {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+
+.Cat {
   background-color: lavender;
+  color: goldenrod;
+
+}
+
+.Dog {
+  background-color: green;
+  color: white;
+}
+
+.Dino {
+  background-color: lightskyblue;
+  color: white;
 }
