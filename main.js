@@ -241,11 +241,11 @@ const pets = [
     }
   ];
 
-  const renderToDom = (divId, htmlToRender) => {
-    const selectedDiv = document.querySelector(divId);
-    selectedDiv.innerHTML = htmlToRender;
-  };
 
+const renderToDom = (divId, htmlToRender) => {
+  const selectedDiv = document.querySelector(divId);
+  selectedDiv.innerHTML = htmlToRender;
+};
 
 const cardsOnDom = (pets) => {
   let domString = "";
@@ -255,7 +255,7 @@ const cardsOnDom = (pets) => {
     <div class="card-body">
       <h5 class="card-title">${pet.name}</h5>
       <p class="card-text">${pet.specialSkill}</p>
-      <a href="#" class="btn btn-primary">${pet.type}</a>
+      <p class="pet-type ${pet.type}">${pet.type}</p>
     </div>
   </div>`;
   };
@@ -278,6 +278,7 @@ const filter = (array, petType) => {
  const catButton = document.querySelector("#cats");
  const dogButton = document.querySelector("#dogs");
  const dinoButton = document.querySelector("#dinos");
+ const allButton = document.querySelector("#all");
 
  catButton.addEventListener("click", () => {
   const catType = filter(pets, "cat");
@@ -292,4 +293,8 @@ const filter = (array, petType) => {
  dinoButton.addEventListener("click", () => {
   const dinoType = filter(pets, "dino");
   cardsOnDom(dinoType);
+ });
+
+ allButton.addEventListener("click", () => {
+  cardsOnDom(pets);
  });
